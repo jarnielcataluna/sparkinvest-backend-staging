@@ -28,6 +28,7 @@ if ($monthlyIncome > $monthlyInvestment) {
     $return['error'] = FALSE;
     $return['projected_payout_safe'] =  $projected_safe;
     $return['projected_payout_well'] = $projected_well;
+    $return['monthly_investment'] = $monthlyInvestment;
 } else {
     $return['error'] = TRUE;
     $return['message'] = 'Based on your input, you are aiming to save Php ' . number_format($monthlyInvestment, 2) .'/month to reach your goal. This amount is greater than your planned monthly investment. Please review your customized plan.';
